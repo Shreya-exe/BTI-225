@@ -1,0 +1,98 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set max-width and center content */
+body {
+    margin: 0 auto;
+    max-width: 1100px;
+    padding: 0 20px;
+}
+
+/* Header styling */
+header {
+    position: relative;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Navigation menu styling */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ff8c00;
+}
+
+/* Main content styling */
+main {
+    padding: 20px 0;
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/* Form styling */
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #037c1b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Error message styling */
+#error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+}
+
+.submit-button:hover {
+    background-color: #033607;
+}

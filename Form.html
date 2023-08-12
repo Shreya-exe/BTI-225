@@ -1,0 +1,90 @@
+<!--/*********************************************************************************
+*  BTI225 – Assignment 6 
+*  I declare that this assignment is my own work in accordance with Seneca  Academic Policy.  
+*  No part of this assignment has been copied manually or electronically from any other source
+*  (including web sites) or distributed to other students.
+* 
+*  Name: _____Shreya_________________ Student ID: _129778221__ Date: __11 August, 2023___
+*
+*********************************************************************************/ -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>A6 - Shreya Shiv Mamgain~ </title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <header>
+        <div class="center">
+            <h2>
+                BTI225 - Assignment 6
+            </h2>
+        </div>
+    </header>
+    <nav>
+        <div class="center">
+            <ul>
+                <li><a href="index.html">Navigation</a></li>
+                <li><a href="Form.html">Form</a></li>
+                <li><a href="about.html">About</a></li>
+                <li style="float:right"><a href="countries.html">Countries</a></li>
+
+            </ul>
+        </div>
+    </nav>
+
+    <section class="main center">
+
+        <h2>Visitor's info and message</h2>
+
+        <form id="contact-form">
+            <label for="first-name">First Name *</label>
+            <input type="text" id="first-name" name="first-name" required>
+
+            <label for="last-name">Last Name *</label>
+            <input type="text" id="last-name" name="last-name" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="job-title">Job Title</label>
+            <input type="text" id="job-title" name="job-title">
+
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" pattern="\(?\d{3}\)?[-.\s]?\d{3}[-.\s]?\d{4}" placeholder="(999) 999-9999">
+
+            <label for="address">Address</label>
+            <textarea id="address" name="address"></textarea>
+
+            <label for="zip-code">ZIP/Postal Code</label>
+            <input type="text" id="zip-code" name="zip-code" pattern="[A-Za-z]\d[A-Za-z] \d[A-Za-z]\d|[A-Za-z]\d[A-Za-z]\d[A-Za-z]\d">
+
+            <label for="country">Country *</label>
+            <select id="country" name="country" required>
+                <option value="" disabled selected>Select Country</option>
+               
+            </select>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message"></textarea>
+
+            <button class="submit-button" type="submit">Submit</button>
+        </form>
+        <div id="error-messages"></div>
+
+    </section>
+    <footer>
+        <div class="center">&copy; 2023 Shreya </div>
+    </footer>
+
+    <script src="form.js"></script>
+
+</body>
+
+</html>
